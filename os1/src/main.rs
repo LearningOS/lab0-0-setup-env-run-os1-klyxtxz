@@ -1,9 +1,9 @@
 #![no_std]
 #![no_main]
 #![feature(panic_info_message)]
-mod lang_items;
-mod sbi;
 mod console;
+mod sbi;
+mod lang_items;
 #[no_mangle]
 pub fn rust_main() -> ! {
     clear_bss();
